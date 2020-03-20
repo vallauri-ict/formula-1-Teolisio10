@@ -50,3 +50,13 @@ C:\Users\Utente\Desktop\trash\FormulaOneSolution_scuola\FormulaOneBatchConsolePr
 C:\Users\Utente\Desktop\trash\FormulaOneSolution_scuola\FormulaOneBatchConsoleProject\obj\Debug\FormulaOneBatchConsoleProject.csproj.CopyComplete
 C:\Users\Utente\Desktop\trash\FormulaOneSolution_scuola\FormulaOneBatchConsoleProject\obj\Debug\FormulaOneBatchConsoleProject.exe
 C:\Users\Utente\Desktop\trash\FormulaOneSolution_scuola\FormulaOneBatchConsoleProject\obj\Debug\FormulaOneBatchConsoleProject.pdb
+C:\Users\Utente\Documents\GitHub\formula-1-Teolisio10\FormulaOneBatchConsoleProject\bin\Debug\FormulaOneBatchConsoleProject.exe.config
+C:\Users\Utente\Documents\GitHub\formula-1-Teolisio10\FormulaOneBatchConsoleProject\bin\Debug\FormulaOneBatchConsoleProject.exe
+C:\Users\Utente\Documents\GitHub\formula-1-Teolisio10\FormulaOneBatchConsoleProject\bin\Debug\FormulaOneBatchConsoleProject.pdb
+C:\Users\Utente\Documents\GitHub\formula-1-Teolisio10\FormulaOneBatchConsoleProject\bin\Debug\FormulaOneDll.dll
+C:\Users\Utente\Documents\GitHub\formula-1-Teolisio10\FormulaOneBatchConsoleProject\bin\Debug\FormulaOneDll.pdb
+C:\Users\Utente\Documents\GitHub\formula-1-Teolisio10\FormulaOneBatchConsoleProject\obj\Debug\FormulaOneBatchConsoleProject.csprojAssemblyReference.cache
+C:\Users\Utente\Documents\GitHub\formula-1-Teolisio10\FormulaOneBatchConsoleProject\obj\Debug\FormulaOneBatchConsoleProject.csproj.CoreCompileInputs.cache
+C:\Users\Utente\Documents\GitHub\formula-1-Teolisio10\FormulaOneBatchConsoleProject\obj\Debug\FormulaOneBatchConsoleProject.csproj.CopyComplete
+C:\Users\Utente\Documents\GitHub\formula-1-Teolisio10\FormulaOneBatchConsoleProject\obj\Debug\FormulaOneBatchConsoleProject.exe
+C:\Users\Utente\Documents\GitHub\formula-1-Teolisio10\FormulaOneBatchConsoleProject\obj\Debug\FormulaOneBatchConsoleProject.pdb

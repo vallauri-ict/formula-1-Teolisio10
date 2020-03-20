@@ -46,3 +46,9 @@ I:\05_Quinta\Informatica\Lab\F1Project\FormulaOneSolution_scuola\FormulaOneDll\b
 I:\05_Quinta\Informatica\Lab\F1Project\FormulaOneSolution_scuola\FormulaOneDll\obj\Debug\FormulaOneDll.csprojAssemblyReference.cache
 I:\05_Quinta\Informatica\Lab\F1Project\FormulaOneSolution_scuola\FormulaOneDll\obj\Debug\FormulaOneDll.dll
 I:\05_Quinta\Informatica\Lab\F1Project\FormulaOneSolution_scuola\FormulaOneDll\obj\Debug\FormulaOneDll.pdb
+C:\Users\Utente\Documents\GitHub\formula-1-Teolisio10\FormulaOneDll\bin\Debug\FormulaOneDll.dll
+C:\Users\Utente\Documents\GitHub\formula-1-Teolisio10\FormulaOneDll\bin\Debug\FormulaOneDll.pdb
+C:\Users\Utente\Documents\GitHub\formula-1-Teolisio10\FormulaOneDll\obj\Debug\FormulaOneDll.csprojAssemblyReference.cache
+C:\Users\Utente\Documents\GitHub\formula-1-Teolisio10\FormulaOneDll\obj\Debug\FormulaOneDll.csproj.CoreCompileInputs.cache
+C:\Users\Utente\Documents\GitHub\formula-1-Teolisio10\FormulaOneDll\obj\Debug\FormulaOneDll.dll
+C:\Users\Utente\Documents\GitHub\formula-1-Teolisio10\FormulaOneDll\obj\Debug\FormulaOneDll.pdb

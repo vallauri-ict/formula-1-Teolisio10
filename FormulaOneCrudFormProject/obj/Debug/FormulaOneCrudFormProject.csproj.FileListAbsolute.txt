@@ -61,3 +61,16 @@ C:\Users\Utente\Desktop\trash\FormulaOneSolution_scuola\FormulaOneCrudFormProjec
 C:\Users\Utente\Desktop\trash\FormulaOneSolution_scuola\FormulaOneCrudFormProject\obj\Debug\FormulaOneCrudFormProject.csproj.CopyComplete
 C:\Users\Utente\Desktop\trash\FormulaOneSolution_scuola\FormulaOneCrudFormProject\obj\Debug\FormulaOneCrudFormProject.exe
 C:\Users\Utente\Desktop\trash\FormulaOneSolution_scuola\FormulaOneCrudFormProject\obj\Debug\FormulaOneCrudFormProject.pdb
+C:\Users\Utente\Documents\GitHub\formula-1-Teolisio10\FormulaOneCrudFormProject\bin\Debug\FormulaOneCrudFormProject.exe.config
+C:\Users\Utente\Documents\GitHub\formula-1-Teolisio10\FormulaOneCrudFormProject\bin\Debug\FormulaOneCrudFormProject.exe
+C:\Users\Utente\Documents\GitHub\formula-1-Teolisio10\FormulaOneCrudFormProject\bin\Debug\FormulaOneCrudFormProject.pdb
+C:\Users\Utente\Documents\GitHub\formula-1-Teolisio10\FormulaOneCrudFormProject\bin\Debug\FormulaOneDll.dll
+C:\Users\Utente\Documents\GitHub\formula-1-Teolisio10\FormulaOneCrudFormProject\bin\Debug\FormulaOneDll.pdb
+C:\Users\Utente\Documents\GitHub\formula-1-Teolisio10\FormulaOneCrudFormProject\obj\Debug\FormulaOneCrudFormProject.csprojAssemblyReference.cache
+C:\Users\Utente\Documents\GitHub\formula-1-Teolisio10\FormulaOneCrudFormProject\obj\Debug\FormulaOneCrudFormProject.FormMain.resources
+C:\Users\Utente\Documents\GitHub\formula-1-Teolisio10\FormulaOneCrudFormProject\obj\Debug\FormulaOneCrudFormProject.Properties.Resources.resources
+C:\Users\Utente\Documents\GitHub\formula-1-Teolisio10\FormulaOneCrudFormProject\obj\Debug\FormulaOneCrudFormProject.csproj.GenerateResource.cache
+C:\Users\Utente\Documents\GitHub\formula-1-Teolisio10\FormulaOneCrudFormProject\obj\Debug\FormulaOneCrudFormProject.csproj.CoreCompileInputs.cache
+C:\Users\Utente\Documents\GitHub\formula-1-Teolisio10\FormulaOneCrudFormProject\obj\Debug\FormulaOneCrudFormProject.csproj.CopyComplete
+C:\Users\Utente\Documents\GitHub\formula-1-Teolisio10\FormulaOneCrudFormProject\obj\Debug\FormulaOneCrudFormProject.exe
+C:\Users\Utente\Documents\GitHub\formula-1-Teolisio10\FormulaOneCrudFormProject\obj\Debug\FormulaOneCrudFormProject.pdb
