@@ -1,0 +1,49 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title> Formula One App </title>
+</head>
+<body>
+    <div>
+        <h2> All Countries: </h2>
+        <ul id="countries" />
+    </div>
+    <div>
+        <h2> Search by Code: </h2>
+        <input type="text" id="countryCode" size="2" />
+        <input type="button" value="Search" onclick="find();" />
+        <p id="country" />
+    </div>
+
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-2.0.3.min.js"> </script>
+    <script>
+        var uri = 'api/CountriesAPI';
+
+        $(document).ready(function () {
+            $.getJSON(uri)
+                .done(function (data) {
+                    $.each(data, function (key, item) {
+                        $('<li>', { text: formatItem(item) }).appendTo($('#countries'));
+                    });
+                });
+        });
+
+        function formatItem(item) {
+            return item.CountryCode + ': ' + item.CountryName;
+        }
+
+        function find() {
+            var cc = $('#countryCode').val().toString();
+            console.log(cc);
+            $.getJSON(uri + '/' + cc)
+                .done(function (data) {
+                    $('#country').text(formatItem(data));
+                })
+                .fail(function (jqXHR, textStatus, err) {
+                    $('#country').text('Error: ' + err);
+                });
+        }
+    </script>
+</body>
+</html>
