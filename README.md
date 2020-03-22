@@ -7,7 +7,7 @@ It contains different folders with different projects about Formula One.<br>
 
 # Documentation
 
-- C#, .NET solutions like Web APIs, Web Forms, ASPX pages and others... 
+- [C#](https://docs.microsoft.com/it-it/dotnet/csharp/), .NET solutions like Web APIs, Web Forms, ASPX pages and others... 
 - [HTML5](https://www.w3schools.com/html/default.asp)
 - [CSS3](https://www.w3schools.com/css/default.asp)
 - [Javascript](https://www.w3schools.com/js/default.asp)
@@ -16,16 +16,27 @@ It contains different folders with different projects about Formula One.<br>
 - [SQL](https://www.w3schools.com/sql/default.asp)
 
 I used the Visual Studio 2019 platform.<br>
-For SQL I also used Microsoft SQL Server Management Studio 18 platform.
+I also used Microsoft SQL Server Management Studio 18 platform for SQL.
 
 # Projects
 
 ### Project 5 - FormulaOneWebApi
 
-### Project 4 - FormulaOneCrudForm
+Api project that add the possibility to show an XML of the Database datas.
 
-### Project 3 - FormulaOneWebForm
+### Project 4 - FormulaOneWebForm
+
+An ASPX.NET page that shows the Database tables (minimal GUI).
+
+### Project 3 - FormulaOneCrudForm
+
+A Form with simple controls that displays in a more user-friendly screen<br>
+the actions that the Console project can do with more improvements.
 
 ### Project 2 - FormulaOneDll
 
+A series of classes that simplify the management of the entire project.
+
 ### Project 1 - FormulaOneBatch
+
+A simple C# Console project that access a local Database. 
