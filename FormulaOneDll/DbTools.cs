@@ -25,6 +25,7 @@ namespace FormulaOneDll
         private Dictionary<string, Country> countries;
         private Dictionary<int, Driver> drivers;
         private Dictionary<int, Team> teams;
+        private Dictionary<int, Circuit> circuits;
 
         public void ExecuteSqlScript(string sqlScriptName)
         {
@@ -148,6 +149,32 @@ namespace FormulaOneDll
             }
             return teams;
         }
+
+        // RICEZIONE CIRCUITS
+        public Dictionary<int, Circuit> GetCircuits()
+        {
+            if (circuits == null)
+            {
+                circuits = new Dictionary<int, Circuit>();
+                var con = new SqlConnection(CONNSTR);
+                using (con)
+                {
+                    SqlCommand command = new SqlCommand("SELECT * FROM Circuits;", con);
+                    con.Open();
+                    SqlDataReader reader = command.ExecuteReader();
+                    while (reader.Read())
+                    {
+                        int CircuitCode = reader.GetInt32(0);
+                        Circuit circuit = new Circuit(CircuitCode, reader.GetString(1), reader.GetInt32(2), reader.GetString(3));
+                        circuits.Add(CircuitCode, circuit);
+                    }
+                    reader.Close();
+                }
+            }
+            return circuits;
+        }
+
+
 
         // CARICAMENTO TEAMS
         public List<Team> LoadTeams()

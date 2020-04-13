@@ -3,6 +3,7 @@
 var uriCountry = 'api/CountriesAPI';
 var uriDriver = 'api/DriversAPI';
 var uriTeam = 'api/TeamsAPI';
+var uriCircuits = 'api/CircuitsAPI';
 
 $(document).ready(function () {
     $.getJSON(uriCountry).done(function (data) {
@@ -18,6 +19,11 @@ $(document).ready(function () {
     $.getJSON(uriTeam).done(function (data) {
         $.each(data, function (key, item) {
             $('<li>', { text: item.Id + ": " + item.Name  + ", " + item.Country.CountryCode }).appendTo($('#teams'));
+        });
+    });
+    $.getJSON(uriCircuits).done(function (data) {
+        $.each(data, function (key, item) {
+            $('<li>', { text: item.Id + ": " + item.Name }).appendTo($('#circuits'));
         });
     });
 });
@@ -40,6 +46,12 @@ function find(params) {
             $('#team').text(item.Id + ": " + item.Name + ", " + item.Country.CountryCode + "  - " + item.ExtFirstDriver + " " + item.ExtFirstDriver);
         }).fail(function (jqXHR, textStatus, err) {
             $('#team').text('Error: ' + err);
+        });
+    } else if (params == "Circuit") {
+        $.getJSON(uriCircuits + '/' + $("#cId").val()).done(function (item) {
+            $('#circuit').text(item.Id + ": " + item.Name);
+        }).fail(function (jqXHR, textStatus, err) {
+            $('#circuit').text('Error: ' + err);
         });
     }
 }

@@ -55,6 +55,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Circuit.cs" />
     <Compile Include="Country.cs" />
     <Compile Include="DbTools.cs" />
     <Compile Include="Driver.cs" />

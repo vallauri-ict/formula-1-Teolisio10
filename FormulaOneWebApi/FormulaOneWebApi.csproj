@@ -131,6 +131,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\WebApiConfig.cs" />
+    <Compile Include="Controllers\CircuitsAPIController.cs" />
     <Compile Include="Controllers\CountriesAPIController.cs" />
     <Compile Include="Controllers\DriversAPIController.cs" />
     <Compile Include="Controllers\TeamsAPIController.cs" />
