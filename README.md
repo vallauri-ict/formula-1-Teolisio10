@@ -44,7 +44,7 @@ A series of classes that simplify the management of the entire project.
 A simple C# Console project that access a local Database. 
 
 
-# Database illustration
+# Database tables illustration
 
 <p align="center">
   <img src="https://github.com/vallauri-ict/formula-1-Teolisio10/blob/master/Dati/DatabaseSemplification.png" width="80%">
