@@ -1,49 +1,49 @@
 ﻿<!DOCTYPE html>
 <html>
-<head>
-    <meta charset="utf-8" />
-    <title> Formula One App </title>
-</head>
-<body>
-    <div>
-        <h2> All Countries: </h2>
-        <ul id="countries" />
-    </div>
-    <div>
-        <h2> Search by Code: </h2>
-        <input type="text" id="countryCode" size="2" />
-        <input type="button" value="Search" onclick="find();" />
-        <p id="country" />
-    </div>
+    <head>
+        <meta charset="utf-8" />
+        <title> Formula One API </title>
+        <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-2.0.3.min.js"></script>
+        <script src="../Scripts/index.js"></script>
+    </head>
+    <body>
+        <div style="float:left">
+            <div>
+                <h2> Search by Code: </h2>
+                <input type="text" id="countryCode" size="2" />
+                <input type="button" value="Search" onclick="find('Country');" />
+                <p id="country" />
+            </div>
+            <div>
+                <h2> All Countries: </h2>
+                <ul id="countries" />
+            </div>
+        </div>
 
-    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-2.0.3.min.js"> </script>
-    <script>
-        var uri = 'api/CountriesAPI';
+        <div style="float:left">
+            <div>
+                <h2> Search by Id: </h2>
+                <input type="text" id="drId" size="2" />
+                <input type="button" value="Search" onclick="find('Driver');" />
+                <p id="driver" />
+            </div>
+            <div>
+                <h2> All Drivers: </h2>
+                <ul id="drivers" />
+            </div>
+        </div>
 
-        $(document).ready(function () {
-            $.getJSON(uri)
-                .done(function (data) {
-                    $.each(data, function (key, item) {
-                        $('<li>', { text: formatItem(item) }).appendTo($('#countries'));
-                    });
-                });
-        });
-
-        function formatItem(item) {
-            return item.CountryCode + ': ' + item.CountryName;
-        }
-
-        function find() {
-            var cc = $('#countryCode').val().toString();
-            console.log(cc);
-            $.getJSON(uri + '/' + cc)
-                .done(function (data) {
-                    $('#country').text(formatItem(data));
-                })
-                .fail(function (jqXHR, textStatus, err) {
-                    $('#country').text('Error: ' + err);
-                });
-        }
-    </script>
-</body>
+        <div style="float:left;margin-left:100px">
+            <div>
+                <h2> Search by Id: </h2>
+                <input type="text" id="tId" size="2" />
+                <input type="button" value="Search" onclick="find('Team');" />
+                <p id="team" />
+            </div>
+            <div>
+                <h2> All Teams: </h2>
+                <ul id="teams" />
+            </div>
+        </div>
+    </body>
 </html>

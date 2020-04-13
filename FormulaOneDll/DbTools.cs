@@ -24,6 +24,7 @@ namespace FormulaOneDll
         
         private Dictionary<string, Country> countries;
         private Dictionary<int, Driver> drivers;
+        private Dictionary<int, Team> teams;
 
         public void ExecuteSqlScript(string sqlScriptName)
         {
@@ -116,6 +117,36 @@ namespace FormulaOneDll
                 }
             }
             return drivers;
+        }
+
+        // RICEZIONE TEAMS
+        public Dictionary<int, Team> GetTeams()
+        {
+            if (teams == null)
+            {
+                teams = new Dictionary<int, Team>();
+                var con = new SqlConnection(CONNSTR);
+                using (con)
+                {
+                    SqlCommand command = new SqlCommand("SELECT * FROM Teams;", con);
+                    con.Open();
+                    SqlDataReader reader = command.ExecuteReader();
+                    while (reader.Read())
+                    {
+                        string teamCountryCode = reader.GetString(3);
+                        Country teamCountry = GetCountries()[teamCountryCode];
+                        int teamDriverCode1 = reader.GetInt32(7);
+                        Driver teamDriver1 = GetDrivers()[teamDriverCode1];
+                        int teamDriverCode2 = reader.GetInt32(8);
+                        Driver teamDriver2 = GetDrivers()[teamDriverCode2];
+                        int TeamId = reader.GetInt32(0);
+                        Team team = new Team(TeamId, reader.GetString(1), reader.GetString(2), teamCountry, reader.GetString(4), reader.GetString(5), reader.GetString(6), teamDriver1.ToString(), teamDriver2.ToString());
+                        teams.Add(TeamId, team);
+                    }
+                    reader.Close();
+                }
+            }
+            return teams;
         }
 
         // CARICAMENTO TEAMS

@@ -17,12 +17,15 @@ namespace FormulaOneWebApi
 
             config.Routes.MapHttpRoute(
                 name: "DefaultApi",
-                routeTemplate: "api/{controller}/{cc}",
-                defaults: new { cc = RouteParameter.Optional }
+                routeTemplate: "api/{controller}/{id}",
+                defaults: new { id = RouteParameter.Optional }
             );
 
             // PER RICHIEDERE UN JSON SE CI SONO PROBLEMI CON XML
             // config.Formatters.JsonFormatter.SupportedMediaTypes.Add(new MediaTypeHeaderValue("text/html"));
+
+            var appXmlType = config.Formatters.XmlFormatter.SupportedMediaTypes.FirstOrDefault(t => t.MediaType == "application/xml");
+            config.Formatters.XmlFormatter.SupportedMediaTypes.Remove(appXmlType);
         }
     }
 }
