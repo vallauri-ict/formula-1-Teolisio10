@@ -5,6 +5,7 @@
 This is a project that simulate the presentation of the **F1 Championship**.<br>
 It contains different folders with different projects about Formula One.<br>
 
+
 # Documentation
 
 - [C#](https://docs.microsoft.com/it-it/dotnet/csharp/), .NET solutions like Web APIs, Web Forms, ASPX pages and others... 
@@ -17,6 +18,7 @@ It contains different folders with different projects about Formula One.<br>
 
 I used the Visual Studio 2019 platform.<br>
 I also used Microsoft SQL Server Management Studio 18 platform for SQL.
+
 
 # Projects
 
@@ -40,3 +42,10 @@ A series of classes that simplify the management of the entire project.
 ### Project 1 - FormulaOneBatch
 
 A simple C# Console project that access a local Database. 
+
+
+# Database illustration
+
+<p align="center">
+  <img src="https://github.com/vallauri-ict/formula-1-Teolisio10/Dati/DatabaseSemplification.png" width="65%">
+</p>
