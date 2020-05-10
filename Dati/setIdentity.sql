@@ -1,0 +1,3 @@
+SET IDENTITY_INSERT [dbo].[Races] ON;
+SET IDENTITY_INSERT [dbo].[Drivers] ON;
+SET IDENTITY_INSERT [dbo].[Teams] ON;

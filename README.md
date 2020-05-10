@@ -32,8 +32,7 @@ An ASPX.NET page that shows the Database tables (minimal GUI).
 
 ### Project 3 - FormulaOneCrudForm
 
-A Form with simple controls that displays in a more user-friendly screen<br>
-the actions that the Console project can do with more improvements.
+A Form with simple controls that displays, in a more user-friendly way, the actions that the Console project can do with more improvements.
 
 ### Project 2 - FormulaOneDll
 
@@ -47,5 +46,5 @@ A simple C# Console project that access a local Database.
 # Database tables illustration
 
 <p align="center">
-  <img src="https://github.com/vallauri-ict/formula-1-Teolisio10/blob/master/Dati/DatabaseSemplification.png" width="80%">
+  <img src="https://github.com/vallauri-ict/formula-1-Teolisio10/blob/master/Dati/DatabaseScheme.png" width="80%">
 </p>

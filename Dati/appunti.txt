@@ -1,10 +1,4 @@
-MODIFICHE AL DB
-- img			tabella Circuits
-- firstGrandPrix	tabella Circuits
-- flag			tabella Countries
-- img			tabella Drivers
-- logo			tabella Teams
-
+MODIFICHE AL DB NON ANCORA APPLICATE ALLE CLASSI E QUERY
 --------------------------------------------------------------------------------
 
 Web Services:

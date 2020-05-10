@@ -26,6 +26,15 @@ namespace FormulaOneWebApi
 
             var appXmlType = config.Formatters.XmlFormatter.SupportedMediaTypes.FirstOrDefault(t => t.MediaType == "application/xml");
             config.Formatters.XmlFormatter.SupportedMediaTypes.Remove(appXmlType);
+			
+			GlobalConfiguration.Configuration.Formatters.JsonFormatter.MediaTypeMappings
+                .Add(new System.Net.Http.Formatting.RequestHeaderMapping(
+                    "Accept",
+                    "text/html",
+                    StringComparison.InvariantCultureIgnoreCase,
+                    true,
+                    "application/json")
+                );
         }
     }
 }
