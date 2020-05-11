@@ -1,4 +1,4 @@
-# Formula One Project ## :trophy: # :car: :computer:
+# :computer: Formula One Project  :car: :trophy:
 
 ### Fina Matteo - 5B INF - I.I.S. Vallauri, Fossano (CN)
 
