@@ -1,7 +1,6 @@
 # Formula One Project :computer: :trophy:
 
 ### Fina Matteo - 5B INF - I.I.S. Vallauri, Fossano (CN)
-
 This is a project that simulate the presentation of the **F1 Championship**, edition 2019<br>
 It contains different folders with different projects <br>
 
