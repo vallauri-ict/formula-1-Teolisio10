@@ -1,4 +1,4 @@
-# Formula One Project :trophy: :car: :computer:
+# Formula One Project ## :trophy: # :car: :computer:
 
 ### Fina Matteo - 5B INF - I.I.S. Vallauri, Fossano (CN)
 
@@ -7,7 +7,7 @@ It contains different folders with different projects about Formula One.<br>
 
 
 # Projects
-###Project 6 - FormulaOneWebApiRest
+### Project 6 - FormulaOneWebApiRest
 Api project with great graphics in order to show personalized APIs
 
 ### Project 5 - FormulaOneWebApi
