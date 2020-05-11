@@ -1,9 +1,9 @@
-# :computer: Formula One Project    :trophy:
+# Formula One Project :computer: :trophy:
 
 ### Fina Matteo - 5B INF - I.I.S. Vallauri, Fossano (CN)
 
-This is a project that simulate the presentation of the **F1 Championship**.<br>
-It contains different folders with different projects about Formula One.<br>
+This is a project that simulate the presentation of the **F1 Championship**, edition 2019<br>
+It contains different folders with different projects <br>
 
 
 # Projects
@@ -40,9 +40,9 @@ To manage the database I used the Microsoft SQL Server Management Studio 18 plat
 
 
 # To make it work
-First Download the ZIP file and unzip it wherever you want
-Then open `FormulaOneSolution.sln` with Visual Studio
-Now choose the project that you want to run
+First Download the ZIP file and unzip it wherever you want<br>
+Then open `FormulaOneSolution.sln` with Visual Studio<br>
+Now choose the project that you want to run<br>
 **Remember:** the Database in the `Dati` root must be in `C:\dati` or modify the path in the *DbTool.cs* file and in the *Web.config* file
 
 

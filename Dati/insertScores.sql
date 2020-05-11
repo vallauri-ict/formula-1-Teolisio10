@@ -1,7 +1,7 @@
 INSERT INTO [dbo].[Scores]
 (
     id,
-	score,
+	points,
 	details
 )
 VALUES
