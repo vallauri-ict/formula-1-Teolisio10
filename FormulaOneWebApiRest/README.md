@@ -2,7 +2,10 @@
 aaa
 
 # Web Services
+Semplification and analysis of the main web services
+
 ## TEAMS
+Based on the Teams table
 **api/teams/list**
 ```
 [
@@ -29,9 +32,9 @@ aaa
     ]
 }
 ```
-<hr width="80%" align="center"/>
 
 ## DRIVERS
+Based on the Drivers table
 **api/drivers/list**
 ```
 api/drivers/list
@@ -57,6 +60,7 @@ api/drivers/list
 ```
 
 ## RESULTS
+Based on the Races_Scores table
 **api/races-results/list**
 ```
 [
@@ -74,7 +78,7 @@ api/drivers/list
     ...
 ]
 ```
-
+Based on the Drivers table
 **api/races-results/1/details**
 ```
 [
@@ -90,7 +94,7 @@ api/drivers/list
     ...
 ]
 ```
-
+Based on the Races_Scores table
 **api/ranking/list**
 ```
 [
@@ -118,7 +122,7 @@ api/drivers/list
     ...
 ]
 ```
-
+Based on the Races_Scores table
 **api/teams-results/list**
 ```
 [
@@ -141,4 +145,33 @@ api/drivers/list
     },
     ...
 ]
+```
+
+## CIRCUITS
+Based on the Circuits table
+**api/circuits/list**
+```
+[
+    --same as: api/circuits/n/detail--,
+    --same as: api/circuits/n/detail--,
+    ...
+]
+```
+
+**api/circuits/1/detail**
+```
+{
+    name: “Melbourne Grand Prix Circuit”,
+    Countries: {countryName: “Australia”}
+    length: “5303”,
+    recordLap: “1.24.125”,
+    img: “...”,
+    firstGrandPrix: “1996”,
+    Races:
+    {
+        grandPrixDate: “17/03/2019”,
+        grandPrixName: “Formula 1 Rolex Australian Grand Prix 2019”,
+        nLaps: “58”
+    }
+}
 ```
