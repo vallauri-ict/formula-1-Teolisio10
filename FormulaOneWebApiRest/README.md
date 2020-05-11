@@ -2,7 +2,7 @@
 aaa
 
 # Web Services
-### TEAMS
+## TEAMS
 **api/teams/list**
 ```
 [
@@ -29,8 +29,9 @@ aaa
     ]
 }
 ```
-<hr width="70%">
-### DRIVERS
+<hr width="80%" align="center"/>
+
+## DRIVERS
 **api/drivers/list**
 ```
 api/drivers/list
@@ -55,7 +56,7 @@ api/drivers/list
 }
 ```
 
-### RESULTS
+## RESULTS
 **api/races-results/list**
 ```
 [
@@ -84,7 +85,7 @@ api/drivers/list
         lastname: “Bottas”,
         firstname: “Valtteri”,
         Teams: {name: “Mercedes”},
-        Scores: {score: “26”} *points sommati se 1° e giro veloce = 25+1*
+        * Scores: {score: “26”} points sommati se 1° e giro veloce = 25+1
     },
     ...
 ]
@@ -98,7 +99,7 @@ api/drivers/list
         Drivers: {firstName: “Lewis”, lastName: “Hamilton”},
         Countries: {countrCode: “UK”},
         Teams: {name: “Mercedes”},
-        *points: Races Races_Scores calcolo dinamico score*
+        * points: Races Races_Scores calcolo dinamico score
     },
     ...
 ]
@@ -122,9 +123,9 @@ api/drivers/list
 ```
 [
     {
-        *position: Races Races_Scores calcolo dinamico punti, quindi sort*
-        *Teams: {name: “Mercedes”},*
-        *points: Races Races_Scores calcolo dinamico score*
+        * position: Races Races_Scores calcolo dinamico punti, quindi sort
+        * Teams: {name: “Mercedes”},
+        * points: Races Races_Scores calcolo dinamico score
     },
     ...
 ]
@@ -136,7 +137,7 @@ api/drivers/list
     {
         Countries: {countryName: “Australia”},
         Races: {grandPrixDate: “17/03/2019”}
-        points: Races Races_Scores calcolo dinamico score
+        * points: Races Races_Scores calcolo dinamico score
     },
     ...
 ]
