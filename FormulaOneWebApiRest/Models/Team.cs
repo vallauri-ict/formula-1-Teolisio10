@@ -16,7 +16,7 @@ namespace FormulaOneWebApiRest.Models
         public string FullTeamName { get; set; }
         public string PowerUnit { get; set; }
         public string TechnicalChief { get; set; }
-        public string chassis { get; set; }
+        public string Chassis { get; set; }
 
         public string ExtCountry { get; set; }
         [ForeignKey("ExtCountry")]

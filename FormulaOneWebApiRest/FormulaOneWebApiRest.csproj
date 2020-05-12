@@ -87,6 +87,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Global.asax" />
+    <Content Include="index.html" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -99,6 +100,15 @@
     <Compile Include="Controllers\ScoresController.cs" />
     <Compile Include="Controllers\TeamsController.cs" />
     <Compile Include="Data\FormulaOneWebApiRestContext.cs" />
+    <Compile Include="DTOs\CircuitDetailDto.cs" />
+    <Compile Include="DTOs\CircuitDto.cs" />
+    <Compile Include="DTOs\DriverDetailDto.cs" />
+    <Compile Include="DTOs\DriverDto.cs" />
+    <Compile Include="DTOs\RacesResultDto.cs" />
+    <Compile Include="DTOs\RacesResultsDetailDto.cs" />
+    <Compile Include="DTOs\RankingDto.cs" />
+    <Compile Include="DTOs\TeamDetailDto.cs" />
+    <Compile Include="DTOs\TeamDto.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
