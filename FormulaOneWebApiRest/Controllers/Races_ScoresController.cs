@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Data;
 using System.Data.Entity;
 using System.Data.Entity.Infrastructure;
+using System.Deployment.Internal;
 using System.Linq;
 using System.Linq.Expressions;
 using System.Net;
@@ -28,6 +29,7 @@ namespace FormulaOneWebApiRest.Controllers
         public IQueryable<RacesResultDto> GetRacesResults()
         {
             return (from rasc in db.Races_Scores
+                    where rasc.ExtScore == 1
                     select new RacesResultDto
                     {
                         Id = rasc.Id,
@@ -41,29 +43,23 @@ namespace FormulaOneWebApiRest.Controllers
                 );
         }
 
-        // GET: api/races-results/5
         [Route("~/api/races-results/{id:int}")]
         [ResponseType(typeof(RacesResultDto))]
-        public async Task<IHttpActionResult> GetRaceResults(int id)
+        public IQueryable<RacesResultDto> GetRaceResults(int id)
         {
-            var races_scores = await (from rasc in db.Races_Scores
-                                      where rasc.ExtRace == id
-                                      select new RacesResultDto
-                                      {
-                                          Id = rasc.Id,
-                                          FastestLap = rasc.FastestLap,
-                                          DriverFirstname = rasc.Driver.Firstname,
-                                          DriverLastname = rasc.Driver.Lastname,
-                                          RaceNLaps = rasc.Race.NLaps,
-                                          RaceGrandPrixDate = rasc.Race.GrandPrixDate,
-                                          CountryName = rasc.Race.Country.CountryName
-                                      }).FirstOrDefaultAsync();
-            if (races_scores == null)
-            {
-                return NotFound();
-            }
-
-            return Ok(races_scores);
+            return (from rasc in db.Races_Scores
+                    where rasc.ExtRace == id
+                    select new RacesResultDto
+                    {
+                        Id = rasc.Id,
+                        FastestLap = rasc.FastestLap,
+                        DriverFirstname = rasc.Driver.Firstname,
+                        DriverLastname = rasc.Driver.Lastname,
+                        RaceNLaps = rasc.Race.NLaps,
+                        RaceGrandPrixDate = rasc.Race.GrandPrixDate,
+                        CountryName = rasc.Race.Country.CountryName
+                    }
+                );
         }
 
         // GET: api/races-results/5/details

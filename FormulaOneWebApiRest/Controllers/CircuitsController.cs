@@ -34,7 +34,7 @@ namespace FormulaOneWebApiRest.Controllers
                         Id = c.Id,
                         Name = c.Name,
                         Img = c.Img,
-                        CountryName = r.ExtCountry
+                        CountryName = r.Country.CountryName
                     }
                 );
         }
@@ -53,7 +53,7 @@ namespace FormulaOneWebApiRest.Controllers
                                      Id = c.Id,
                                      Name = c.Name,
                                      Img = c.Img,
-                                     CountryName = r.ExtCountry
+                                     CountryName = r.Country.CountryName
                                  }).FirstOrDefaultAsync();
 
             if (circuit == null)
@@ -82,7 +82,7 @@ namespace FormulaOneWebApiRest.Controllers
                                      RecordLap = c.RecordLap,
                                      Img = c.Img,
                                      FirstGrandPrix = c.FirstGrandPrix,
-                                     CountryName = r.ExtCountry,
+                                     CountryName = r.Country.CountryName,
                                      RaceGrandPrixDate = r.GrandPrixDate,
                                      RaceGrandPrixName = r.GrandPrixName,
                                      RaceNLaps = r.NLaps,

@@ -10,25 +10,49 @@ using System.Threading.Tasks;
 using System.Web.Http;
 using System.Web.Http.Description;
 using FormulaOneWebApiRest.Data;
+using FormulaOneWebApiRest.DTOs;
 using FormulaOneWebApiRest.Models;
 
 namespace FormulaOneWebApiRest.Controllers
 {
+    [RoutePrefix("api/Races")]
     public class RacesController : ApiController
     {
         private FormulaOneWebApiRestContext db = new FormulaOneWebApiRestContext();
 
         // GET: api/Races
-        public IQueryable<Race> GetRaces()
+        [Route("")]
+        public IQueryable<RaceDto> GetRaces()
         {
-            return db.Races;
+            return (from r in db.Races
+                    select new RaceDto
+                    {
+                        Id = r.Id,
+                        GrandPrixName = r.GrandPrixName,
+                        GrandPrixDate = r.GrandPrixDate,
+                        NLaps = r.NLaps,
+                        CountryName = r.Country.CountryName,
+                        CircuitName = r.Circuit.Name
+                    }
+                );
         }
 
         // GET: api/Races/5
-        [ResponseType(typeof(Race))]
+        [Route("{id:int}")]
+        [ResponseType(typeof(RaceDto))]
         public async Task<IHttpActionResult> GetRace(int id)
         {
-            Race race = await db.Races.FindAsync(id);
+            var race = await (from r in db.Races
+                              where r.Id == id
+                              select new RaceDto
+                              {
+                                  Id = r.Id,
+                                  GrandPrixName = r.GrandPrixName,
+                                  GrandPrixDate = r.GrandPrixDate,
+                                  NLaps = r.NLaps,
+                                  CountryName = r.Country.CountryName,
+                                  CircuitName = r.Circuit.Name
+                              }).FirstOrDefaultAsync();
             if (race == null)
             {
                 return NotFound();

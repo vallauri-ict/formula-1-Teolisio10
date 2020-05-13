@@ -27,7 +27,7 @@ namespace FormulaOneWebApiRest.Controllers
         {
             return (from t in db.Teams
                     from d in db.Drivers
-                    where t.ExtFirstDriver == d.Id
+                    where (t.ExtFirstDriver == d.Id || t.ExtSecondDriver == d.Id)
                     select new DriverDto
                     {
                         Id = d.Id,
@@ -48,7 +48,7 @@ namespace FormulaOneWebApiRest.Controllers
         {
             var driver = await (from t in db.Teams
                                 from d in db.Drivers
-                                where t.ExtFirstDriver == d.Id
+                                where (t.ExtFirstDriver == d.Id || t.ExtSecondDriver == d.Id)
                                 where d.Id == id
                                 select new DriverDto
                                 {
@@ -75,7 +75,7 @@ namespace FormulaOneWebApiRest.Controllers
         {
             var driver = await (from d in db.Drivers
                                 from t in db.Teams
-                                where t.ExtFirstDriver == d.Id
+                                where (t.ExtFirstDriver == d.Id || t.ExtSecondDriver == d.Id)
                                 where d.Id == id
                                 select new DriverDetailDto
                                 {
