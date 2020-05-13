@@ -1,5 +1,7 @@
 # Formula One Web API Rest
-This is the main project that access a localhost site
+This is the main project. By accessing the *localhost* site, the APIs load the data from the Database, and here are displayed in Tables and Card with Modals<br>
+Otherwise is possible to read the json that return from the API request by typing manually the resource<br>
+I used a [template](https://demos.creative-tim.com/argon-dashboard/docs/getting-started/overview.html) to facilitate the structure
 
 # Web Services
 Semplification and analysis of the main web services
@@ -124,7 +126,7 @@ Based on the Drivers table<br/>
         lastname: "Bottas",
         firstname: "Valtteri",
         Teams: {name: "Mercedes"},
-        * Scores: {score: "26"} points sommati se 1° e giro veloce = 25+1
+        * Scores: {score: "26"} points sommati se 1ï¿½ e giro veloce = 25+1
     },
     ...
 ]
