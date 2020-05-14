@@ -65,27 +65,22 @@ namespace FormulaOneWebApiRest.Controllers
         // GET: api/races-results/5/details
         [Route("~/api/races-results/{id:int}/details")]
         [ResponseType(typeof(RacesResultsDetailDto))]
-        public async Task<IHttpActionResult> GetRaceResultsDetail(int id)
+        public IQueryable<RacesResultsDetailDto> GetRaceResultsDetail(int id)
         {
-            var rs = await (from rasc in db.Races_Scores
-                            where rasc.ExtRace == id
-                            select new RacesResultsDetailDto
-                            {
-                                Id = rasc.Id,
-                                FastestLap = rasc.FastestLap,
-                                RacesNLaps = rasc.Race.NLaps,
-                                DriverFirstname = rasc.Driver.Firstname,
-                                DriverLastname = rasc.Driver.Lastname,
-                                DriverNumber = rasc.Driver.Number,
-                                ScoreId = rasc.Score.Id,
-                                ScorePoints = rasc.Score.Points
-                                // oh no, gestione giro veloce +1 
-                            }).FirstOrDefaultAsync();
-            if (rs == null)
-            {
-                return NotFound();
-            }
-            return Ok(rs);
+            return (from rasc in db.Races_Scores
+                    where rasc.ExtRace == id
+                    select new RacesResultsDetailDto
+                    {
+                        Id = rasc.Id,
+                        FastestLap = rasc.FastestLap,
+                        RacesNLaps = rasc.Race.NLaps,
+                        DriverFirstname = rasc.Driver.Firstname,
+                        DriverLastname = rasc.Driver.Lastname,
+                        DriverNumber = rasc.Driver.Number,
+                        ScoreId = rasc.Score.Id,
+                        ScorePoints = rasc.Score.Points
+                        // oh no, gestione giro veloce +1 
+                    });
         }
 
         // GET: api/Races_Scores
@@ -105,8 +100,8 @@ namespace FormulaOneWebApiRest.Controllers
                         DriverFirstname = rasc.Driver.Firstname,
                         DriverLastname = rasc.Driver.Lastname,
                         CountryCode = c.CountryCode,
-                        TeamName = t.Name/*,
-                        Points = calcoloDinamico*/
+                        TeamName = t.Name,
+                        Points = rasc.Score.Points
                     }
                );
         }
@@ -131,8 +126,8 @@ namespace FormulaOneWebApiRest.Controllers
                                            DriverFirstname = rasc.Driver.Firstname,
                                            DriverLastname = rasc.Driver.Lastname,
                                            CountryCode = c.CountryCode,
-                                           TeamName = t.Name/*,
-                        Points = calcoloFinamico*/
+                                           TeamName = t.Name,
+                                           Points = rasc.Score.Points
                                        }).FirstOrDefaultAsync();
             if (ranking == null)
             {
@@ -159,7 +154,7 @@ namespace FormulaOneWebApiRest.Controllers
                                 DriverNumber = rasc.Driver.Number,
                                 ScoreId = rasc.Score.Id,
                                 ScorePoints = rasc.Score.Points
-                                // oh no, gestione giro veloce +1 
+                                // eheh, gestione giro veloce +1 manca
                             }).FirstOrDefaultAsync();
 
             if (rs == null)

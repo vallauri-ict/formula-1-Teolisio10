@@ -5,7 +5,9 @@ $(document).ready(function () {
         el: '#panel',
         data: function () {
             return {
-                racesresults: []
+                racesresults: [],
+                raceresultdetails: [],
+                driversresults: []
             }
         },
         methods: {
@@ -16,6 +18,26 @@ $(document).ready(function () {
                         console.log(data);
                         this.racesresults = data;
                     });
+            },
+            ShowRacesresultDetails: function (raceId) {
+                var uri = '../../api/races-results/' + raceId + '/details';
+                $.getJSON(uri)
+                    .done((data) => {
+                        console.log(data);
+                        this.raceresultdetails = data;
+                    });
+            },
+            ShowDriversresults: function () {
+                var uri = '../../api/ranking';
+                $.getJSON(uri)
+                    .done((data) => {
+                        console.log(data);
+                        console.log(_.groupBy(data, function (obj) {
+                                return JSON.stringify([obj.DriverLastname, obj.Points]);
+                            })
+                        );
+                        this.driversresults = data;
+                    });
             }
         },
         filters: {
@@ -25,6 +47,7 @@ $(document).ready(function () {
         },
         beforeMount() {
             this.ShowRacesresults();
+            this.ShowDriversresults();
         }
     });
 });
