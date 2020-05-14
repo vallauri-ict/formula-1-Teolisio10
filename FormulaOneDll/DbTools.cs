@@ -19,7 +19,7 @@ namespace FormulaOneDll
 
     public class DbTools
     {
-        public const string WORKINGPATH = @"C:\Dati\";
+        public const string WORKINGPATH = @"C:\dati\";
         public const string CONNSTR = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=" + WORKINGPATH + "FormulaOne.mdf;Integrated Security=True";
         
         private Dictionary<string, Country> countries;

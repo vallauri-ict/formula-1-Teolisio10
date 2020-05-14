@@ -7,22 +7,25 @@ It contains different folders with different projects <br>
 
 # Projects
 ### Project 6 - FormulaOneWebApiRest
-Api project with great graphics in order to show personalized APIs
+Api project with great graphics that shows personalized APIs.
+<br>You can search as path the API resource (that return a JSON) or use the site.
 
 ### Project 5 - FormulaOneWebApi
-Api project that add the possibility to show an XML of the Database datas.
+Api project that add the possibility to show an XML/JSON of the Database main tables data.
 
 ### Project 4 - FormulaOneWebForm
-An ASPX.NET page that shows the Database tables (minimal GUI).
+An ASPX.NET page that shows the Database tables in a Gridview (minimal GUI).
 
 ### Project 3 - FormulaOneCrudForm
-A Form with simple controls that displays, in a more user-friendly way, the actions that the Console project can do with more improvements.
+A Form with simple controls that displays, in a more user-friendly way, the actions that the Console project can do (with more improvements).
 
 ### Project 2 - FormulaOneDll
 A series of classes that simplify the management of the entire project.
+<br>Each class contains a property for each column name.
 
 ### Project 1 - FormulaOneBatch
 A simple C# Console project that access a local Database.
+<br>With simple CLI instruction you have the possibility to Create, Insert and Drop a table.
 
 
 # Documentation
